@@ -11,4 +11,6 @@
     <string name="user_login">ULOGUJ SE</string>
     <string name="user_registration">REGISTRUJ SE</string>
     <string name="link_user_signup">Nemate nalog? Kreirajte novi nalog!</string>
+    <string name="popular_products">Popular Products</string>
+    <string name="browse_category">Browse Category</string>
 </resources>

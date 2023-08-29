@@ -30,7 +30,7 @@ public class LoginActivity extends Activity {
                     Toast.makeText(LoginActivity.this, "Nisu uneta sva polja!", Toast.LENGTH_SHORT).show();
                 } else {
                     Boolean checkEmailPass = databaseHelper.checkEmailPassword(email, password);
-                    
+
                     if(checkEmailPass == true){
                         Toast.makeText(LoginActivity.this, "Uspešno ste se ulogovali!", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
@@ -49,9 +49,5 @@ public class LoginActivity extends Activity {
                 startActivity(intent);
             }
         });
-
-
-
-
     }
 }
