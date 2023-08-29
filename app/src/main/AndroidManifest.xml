@@ -19,6 +19,12 @@
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
+            android:name=".MenClothesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WomenClothesActivity"
+            android:exported="false" />
+        <activity
             android:name=".RegistrationActivity"
             android:exported="true">
             <intent-filter>
