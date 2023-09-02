@@ -7,30 +7,90 @@
     tools:context=".MenClothesActivity">
 
     <ViewFlipper
-
         android:id="@+id/view_flipper"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:inAnimation="@android:anim/slide_in_left"
         android:outAnimation="@android:anim/slide_out_right">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:src="@drawable/nike_dry_pants" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:src="@drawable/addidas_tiro19" />
+            <ImageView
+                android:id="@+id/nikedry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/nike_dry_pants"
+                android:alpha="0.7"/>
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:src="@drawable/nike_therma_fit" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nike DRI trenerka - 3500din"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorDarkRed"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25sp"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/tiro19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/addidas_tiro19"
+                android:alpha="0.5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Addidas TIRO trenerka - 3000din"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorDarkRed"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25sp"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/niketherma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/nike_therma_fit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nike THERMA FIT trenerka - 3750din"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorDarkRed"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25sp"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
 
     </ViewFlipper>
 

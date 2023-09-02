@@ -19,6 +19,9 @@
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
+            android:name=".CartProductActivity"
+            android:exported="false" />
+        <activity
             android:name=".MenClothesActivity"
             android:exported="false" />
         <activity

@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -19,6 +20,8 @@ public class LoginActivity extends Activity {
         super.onCreate(savedInstanceState);
         binding = ActivityLoginBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        databaseHelper = new DatabaseHelper(this);
 
         binding.buttonlogin.setOnClickListener(new View.OnClickListener() {
             @Override
